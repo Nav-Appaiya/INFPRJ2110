@@ -128,6 +128,7 @@ INSTALLED_APPS = (
     'django_filters',
     'rest_framework.authtoken',
     'rest_framework',
+    'rest_framework_swagger',
         # Uncomment the next line to enable CORS with django-cors-headers
     # 'corsheaders',
 
@@ -145,7 +146,7 @@ except ImportError:
     pass
 else:
     INSTALLED_APPS += (
-        'oauth_provider',
+        #'oauth_provider',
     )
 
 try:

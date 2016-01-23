@@ -12,7 +12,7 @@ urlpatterns = patterns('',  # noqa
     # Examples:
     url(r'^$', 'api.views.city_gis', name='home'),
     url(r'^$', 'api.views.connections', name='connect'),
-
+    url(r'^docs/', include('rest_framework_swagger.urls')),
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
